@@ -1,0 +1,147 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VOCABULARYFORM DIALOGEX 0, 0, 311, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "단어장"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SPELLING,62,25,137,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_EDIT_WORDCLASS,62,42,137,116,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MEANING,62,58,137,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EXAMPLE,62,75,137,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_WORDS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,99,204,70
+    PUSHBUTTON      "기재하기",IDC_BUTTON_RECORD,237,21,50,14
+    PUSHBUTTON      "찾기",IDC_BUTTON_FIND,237,36,50,14
+    PUSHBUTTON      "고치기",IDC_BUTTON_CORRECT,237,51,50,14
+    PUSHBUTTON      "지우기",IDC_BUTTON_ERASE,237,66,50,14
+    PUSHBUTTON      "정리하기",IDC_BUTTON_ARRANGE,237,81,50,14
+    GROUPBOX        "단어",IDC_WORD1,19,16,202,80
+    LTEXT           "철자",IDC_STATIC_SPELLING,37,27,21,8
+    LTEXT           "품사",IDC_STATIC_WORDCLASSES,37,44,22,8
+    LTEXT           "의미",IDC_STATIC_MEANING,37,61,20,8
+    LTEXT           "예시",IDC_STATIC_EXAMPLE,37,77,21,8
+END
+
+IDD_FINDINGFORM DIALOGEX 0, 0, 311, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "찾기"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "조건",IDC_STATIC_CONDITION,14,14,217,63
+    CONTROL         "철자",IDC_BUTTON_SPELLING,"Button",BS_AUTORADIOBUTTON,25,30,29,10
+    CONTROL         "의미",IDC_BUTTON_MEANING,"Button",BS_AUTORADIOBUTTON,25,51,29,10
+    PUSHBUTTON      "찾기",IDC_BUTTON_FIND,241,19,50,14
+    CONTROL         "",IDC_LIST_WORDS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,82,216,82
+    EDITTEXT        IDC_EDIT_SPELLING,63,28,126,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEANING,63,49,126,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VOCABULARYFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_FINDINGFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_VOCABULARYFORM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FINDINGFORM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
